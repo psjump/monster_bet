@@ -1,0 +1,280 @@
+.userInfoAndBalance {
+  margin-bottom: 16px;
+
+  &__infoDetailsIcon__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .popoverWrapper .text-color {
+      color: var(--v3-black-0);
+    }
+  }
+
+  &__avatarContainer {
+    position: absolute;
+    top: 36px;
+    left: calc(50% - 32px);
+    z-index: 1;
+  }
+
+  &__userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid var(--v3-black-6);
+
+    &--title {
+      color: var(--v3-primary-color);
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 4px;
+      text-align: center;
+    }
+
+    &__tooltip {
+      .v3-tooltip-inner {
+        max-width: 226px;
+      }
+    }
+
+    &__checkedIcon {
+      color: var(--v3-white);
+      background-color: var(--v3-cyan-base);
+      border-radius: 100%;
+      width: 18px;
+      height: 18px;
+      font-size: 9px;
+      border: 2px solid var(--v3-white);
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      box-sizing: content-box;
+      z-index: 2;
+      left: 45px;
+      top: 0;
+    }
+
+    &__editIcon {
+      margin-right: 8px;
+      position: relative;
+      top: 3px;
+    }
+
+    &__wrapper {
+      flex-wrap: nowrap;
+      position: relative;
+      align-items: center;
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 8px;
+      align-items: center;
+      gap: 12px;
+
+      &__user {
+        color: var(--v3-text-color-secondary);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        max-width: 226px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      &__username {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: var(--v3-black-85);
+        max-width: 240px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      &__id {
+        display: flex;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+        margin-left: 6px;
+        width: 100%;
+        margin-bottom: 4px;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__icon {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 69px;
+        align-items: flex-start;
+        border-radius: 10px;
+        padding: 14px 12px;
+        color: var(--v3-color-on-primary);
+        background: var(--v3-primary-color);
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 32px;
+
+        .popoverWrapper {
+          margin: 0;
+          cursor: pointer;
+
+          span {
+            color: var(--v3-black-45);
+          }
+        }
+
+        .v3-popover {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          left: 0 !important;
+
+          .v3-popover-arrow {
+            width: 30px;
+          }
+        }
+      }
+      &__bonus {
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        overflow: hidden;
+
+        .bonus-text {
+          margin: 0 6px;
+          position: relative;
+          z-index: 1;
+        }
+
+        &.green {
+          border: 1px solid var(--v3-cyan-base);
+          color: var(--v3-cyan-base);
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: var(--v3-cyan-base);
+            opacity: 0.2;
+          }
+        }
+
+        &.red {
+          border: 1px solid var(--v3-red-3);
+          color: var(--v3-red-3);
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: var(--v3-red-3);
+            opacity: 0.2;
+          }
+        }
+
+        &.gray {
+          background: var(--v3-black-6);
+          color: var(--v3-black-45);
+        }
+      }
+    }
+  }
+
+  &__kycFailedMessage {
+    width: unset !important;
+    margin-bottom: 4px;
+  }
+}
+.statusColorDes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  width: 79px;
+  height: 20px;
+  margin-left: 4px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--v3-text-color-secondary-fixed);
+}
+
+.colorOrange {
+  background-color: #f7c125;
+}
+
+.colorGreen {
+  background-color: #31cdc7;
+}
+
+.colorRed {
+  background-color: #ff6262;
+}
+
+.user__avatar {
+  min-width: 56px;
+  background: var(--v3-black-0);
+  border: 2px solid var(--v3-primary-3);
+  color: var(--v3-primary-4);
+
+  .v3-avatar-string {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 60px !important;
+  }
+}
+
+.accountModal--mobile {
+  .userInfoAndBalance {
+    margin-bottom: 8px;
+  }
+
+  .accountBalance,
+  .showInformationForGameBreak {
+    margin-bottom: 24px;
+  }
+
+  .showInformationForGameBreak {
+    margin-top: 0;
+  }
+}
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;

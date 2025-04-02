@@ -1,0 +1,44 @@
+.listItem {
+  background: var(--v3-black-2);
+  border: 1px solid var(--v3-black-6);
+  padding: 16px 12px 16px 12px;
+  border-radius: var(--v3-border-radius-xs);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  &__thumb {
+    font-size: 24px;
+    color: var(--v3-text-color);
+    margin-right: 8px;
+    line-height: 0;
+  }
+  &__extra {
+    font-size: 12px;
+    color: var(--v3-text-color-secondary);
+  }
+  &__name {
+    line-height: 20px;
+    color: var(--v3-text-color);
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    font-size: 14px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__arrow {
+    margin-left: 8px;
+    color: var(--v3-text-color-secondary);
+  }
+  &--active {
+    .listItem__name,
+    .listItem__thumb {
+      color: var(--v3-primary-6);
+    }
+  }
+}
+
+@font-family: geomanist;@pagination-font-family: @font-family;@border-radius-base: 4px;@table-padding-horizontal: 24px;@input-padding-vertical-base: 3px;@ant-prefix: v3;@btn-font-size-lg: 14px;@font-size-heading: 14px;@font-size-caption: 14px;@modal-font-size-heading: 16px;@modal-button-font-size: 14px;@modal-button-height: 40px;
