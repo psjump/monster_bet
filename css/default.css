@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+
+
+        .x-casinoGameSingleView__gameContainer__gameInfo__rightBlock .v3-icon {
+            color: #000 !important;
+        }
+
+        .hidden-opacity {
+            opacity: 0;
+        }
+
+        #scroll__left,
+        #scroll_right {
+            position: absolute;
+            top: 9px;
+            height: 18px;
+            width: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        #scroll__left {
+            left: -2px;
+        }
+
+        #scroll_right {
+            right: -3px;
+        }
+
+        .icon-icon-arrow-right:before {
+            content: "ᐳ";
+            font-size: 14px;
+        }
+
+        .icon-icon-arrow-left:before {
+            content: "ᐸ";
+            font-size: 14px;
+        }
+
+        #navigation-1987 nav {
+            width: 85vw;
+            margin: auto;
+        }
+
+        .header_navigation .navigation li.center:nth-child(3).page.show:not(.page-children li.center.page.show):before,
+        .header_navigation .navigation li.center:nth-child(6).page.show:not(.page-children li.center.page.show):before,
+        .header_navigation .navigation li.center:nth-child(7).page.show:not(.page-children li.center.page.show):before {
+            animation: flagAnim 1s ease-in-out infinite alternate;
+            -webkit-animation: flagAnim 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes flagAnim {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(.8);
+            }
+        }
+
+        .header_navigation .navigation li.center:nth-child(3).page.show:not(.page-children li.center.page.show):before,
+        .header_navigation .navigation li.center:nth-child(6).page.show:not(.page-children li.center.page.show):before,
+        .header_navigation .navigation li.center:nth-child(7).page.show:not(.page-children li.center.page.show):before {
+            content: "";
+            width: 30px;
+            height: 17px;
+            top: -14px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            display: inline-block;
+            background-repeat: no-repeat;
+        }
+
+        /* Top icon: 슬롯 TOP 아이콘 */
+        .header_navigation .navigation li.center:nth-child(3).page.show:not(.page-children li.left.page.show):before {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 16'%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:%23F1E219;}.cls-2{fill:%23094E34;}%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M0,.5v13l15,3,15-3V.5Z' transform='translate(0 -0.5)'/%3E%3Cpath class='cls-2' d='M7.09,4.57H4.77V3.51h5.89V4.57H8.33v6.92H7.09Z' transform='translate(0 -0.5)'/%3E%3Cpath class='cls-2' d='M11.3,7.47c0-2.56,1.4-4.1,3.43-4.1s3.44,1.54,3.44,4.1-1.41,4.16-3.44,4.16S11.3,10,11.3,7.47Zm5.6,0c0-1.87-.86-3-2.17-3s-2.15,1.14-2.15,3,.84,3.07,2.15,3.07S16.9,9.34,16.9,7.47Z' transform='translate(0 -0.5)'/%3E%3Cpath class='cls-2' d='M19.82,3.51h2.39c1.76,0,3,.61,3,2.41s-1.26,2.55-3,2.55H21.07v3H19.82Zm2.32,4C23.4,7.46,24,7,24,5.92s-.65-1.39-1.91-1.39h-1V7.46Z' transform='translate(0 -0.5)'/%3E%3C/svg%3E");
+        }
+
+        /* end new or top flags: 토너먼트 새로운 아이콘 */
+        .header_navigation .navigation li.center:nth-child(6).page.show:not(.page-children li.left.page.show):before {
+            /*background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI3LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMCAxNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzAgMTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRjFFMjE5O30KCS5zdDF7ZmlsbDojMDk0RTM0O30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTAsMHYxM2wxNSwzbDE1LTNWMEgweiIvPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik01LDMuNWMwLDAuNCwwLDAuOCwwLDEuMWMwLDAuMywwLDAuNy0wLjEsMUM1LDUuOCw1LDYuMSw1LjEsNi4zYzAuMSwwLjMsMC4yLDAuNSwwLjQsMC44CgkJQzUuNiw3LjQsNS44LDcuNiw2LDcuOWMwLjIsMC4zLDAuNCwwLjUsMC42LDAuN2MwLDAsMCwwLjEsMCwwLjFjMCwwLDAsMC4xLDAsMC4xTDYuMyw5YzAsMC0wLjEsMC0wLjEsMHMtMC4xLDAtMC4xLDAKCQlDNiw4LjksNS44LDguNyw1LjcsOC41QzUuNiw4LjMsNS40LDguMSw1LjMsNy45QzUuMiw3LjcsNS4xLDcuNSw0LjksNy4zQzQuOCw3LjEsNC44LDYuOSw0LjcsNi43QzQuNSw3LjIsNC4zLDcuNyw0LDguMQoJCUMzLjgsOC41LDMuNCw4LjksMyw5LjJjLTAuMSwwLTAuMSwwLjEtMC4yLDBMMi42LDljLTAuMSwwLDAtMC4xLDAtMC4yYzAuMy0wLjMsMC42LTAuNiwwLjgtMUMzLjcsNy41LDMuOSw3LjEsNCw2LjcKCQljMC4xLTAuNCwwLjMtMC45LDAuMy0xLjRjMC4xLTAuNSwwLjEtMS4xLDAuMS0xLjhjMCwwLDAtMC4xLDAtMC4xYzAsMCwwLDAsMC4xLDBsMC40LDBDNSwzLjMsNSwzLjQsNSwzLjV6IE04LDYuMmgxLjFWMwoJCWMwLTAuMSwwLTAuMSwwLjEtMC4xaDAuM2MwLjEsMCwwLjEsMCwwLjEsMC4xVjExYzAsMC4xLDAsMC4xLTAuMSwwLjFIOS4zYy0wLjEsMC0wLjEsMC0wLjEtMC4xVjYuOEg4djMuOWMwLDAuMSwwLDAuMS0wLjEsMC4xSDcuNQoJCWMtMC4xLDAtMC4xLDAtMC4xLTAuMVYzLjFDNy40LDMsNy41LDMsNy41LDNoMC4zQzgsMyw4LDMsOCwzLjFWNi4yeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE0LjYsOS4yVjcuNmgtMS44Yy0wLjMsMC0wLjUtMC4xLTAuNi0wLjJjLTAuMS0wLjEtMC4xLTAuMy0wLjEtMC41VjUuOGMwLTAuMywwLjEtMC40LDAuMi0wLjUKCQljMC4xLTAuMSwwLjMtMC4xLDAuNi0wLjFoNC4xYzAuMSwwLDAuMSwwLDAuMiwwYzAsMCwwLTAuMSwwLTAuMlY0YzAtMC4xLDAtMC4xLDAtMC4yYzAsMC0wLjEsMC0wLjIsMGgtNC43YzAsMC0wLjEsMC0wLjEsMAoJCWMwLDAsMCwwLDAtMC4xVjMuNGMwLDAsMC0wLjEsMC0wLjFjMCwwLDAuMSwwLDAuMSwwSDE3YzAuMSwwLDAuMywwLDAuNCwwYzAuMSwwLDAuMiwwLjEsMC4yLDAuMWMwLjEsMCwwLjEsMC4xLDAuMSwwLjIKCQljMCwwLjEsMCwwLjIsMCwwLjNWNWMwLDAuMy0wLjEsMC40LTAuMiwwLjVjLTAuMSwwLjEtMC4zLDAuMS0wLjYsMC4xaC00LjFjLTAuMSwwLTAuMSwwLTAuMiwwYzAsMCwwLDAuMSwwLDAuMnYxCgkJYzAsMC4xLDAsMC4xLDAsMC4yYzAsMCwwLjEsMCwwLjIsMGg0LjljMCwwLDAuMSwwLDAuMSwwczAsMCwwLDAuMXYwLjNjMCwwLDAsMC4xLDAsMC4xYzAsMC0wLjEsMC0wLjEsMGgtMi42djEuNmgzLjYKCQljMCwwLDAuMSwwLDAuMSwwYzAsMCwwLDAsMCwwLjF2MC4zYzAsMCwwLDAuMSwwLDAuMXMtMC4xLDAtMC4xLDBoLTcuN2MwLDAtMC4xLDAtMC4xLDBjMCwwLDAtMC4xLDAtMC4xVjkuM2MwLDAsMC0wLjEsMC0wLjEKCQljMCwwLDAuMSwwLDAuMSwwSDE0LjZ6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjMuMyw5LjVDMjMuMyw5LjUsMjMuMyw5LjQsMjMuMyw5LjVjLTAuMS0wLjEtMC4xLTAuMS0wLjEtMC4xVjcuNWgtMy42YzAsMC0wLjEsMC0wLjEsMGMwLDAsMC0wLjEsMC0wLjFWNy4xCgkJYzAsMCwwLTAuMSwwLTAuMWMwLDAsMC4xLDAsMC4xLDBoNy43YzAsMCwwLjEsMCwwLjEsMGMwLDAsMCwwLDAsMC4xdjAuM2MwLDAsMCwwLjEsMCwwLjFjMCwwLTAuMSwwLTAuMSwwaC0zLjV2MS44CgkJYzAsMCwwLDAuMSwwLDAuMWMwLDAsMCwwLTAuMSwwSDIzLjN6IE0yMy40LDYuMmMtMC4zLDAtMC42LDAtMC45LTAuMWMtMC4zLDAtMC42LTAuMS0wLjktMC4yYy0wLjMtMC4xLTAuNS0wLjMtMC43LTAuNQoJCWMtMC4yLTAuMi0wLjMtMC41LTAuMy0wLjhjMC0wLjMsMC4xLTAuNiwwLjMtMC44YzAuMi0wLjIsMC40LTAuNCwwLjctMC41YzAuMy0wLjEsMC42LTAuMiwwLjktMC4yQzIyLjgsMywyMy4yLDMsMjMuNCwzCgkJYzAuMywwLDAuNiwwLDAuOSwwLjFjMC4zLDAuMSwwLjYsMC4xLDAuOSwwLjNjMC4zLDAuMSwwLjUsMC4zLDAuNywwLjVjMC4yLDAuMiwwLjMsMC41LDAuMywwLjhjMCwwLjMtMC4xLDAuNi0wLjMsMC44CgkJYy0wLjIsMC4yLTAuNCwwLjQtMC43LDAuNUMyNSw2LDI0LjcsNiwyNC40LDYuMUMyNC4xLDYuMiwyMy43LDYuMiwyMy40LDYuMnogTTI2LjQsMTFDMjYuNCwxMSwyNi4zLDExLDI2LjQsMTFsLTUuMSwwCgkJYy0wLjMsMC0wLjUtMC4xLTAuNi0wLjJjLTAuMS0wLjEtMC4xLTAuMy0wLjEtMC41VjguNWMwLTAuMSwwLTAuMSwwLjEtMC4xaDAuNGMwLjEsMCwwLjEsMCwwLjEsMC4xdjEuOGMwLDAuMSwwLDAuMSwwLDAuMgoJCWMwLDAsMC4xLDAsMC4yLDBoNC44YzAsMCwwLjEsMCwwLjEsMGMwLDAsMCwwLDAsMC4xTDI2LjQsMTFDMjYuNSwxMC45LDI2LjQsMTEsMjYuNCwxMXogTTIzLjQsMy41Yy0wLjIsMC0wLjQsMC0wLjcsMAoJCWMtMC4zLDAtMC41LDAuMS0wLjcsMC4yYy0wLjIsMC4xLTAuNCwwLjItMC42LDAuM2MtMC4yLDAuMS0wLjIsMC4zLTAuMiwwLjVzMC4xLDAuNCwwLjIsMC41YzAuMiwwLjEsMC4zLDAuMiwwLjYsMC4zCgkJYzAuMiwwLjEsMC41LDAuMSwwLjcsMC4yYzAuMiwwLDAuNSwwLDAuNywwczAuNCwwLDAuNywwYzAuMiwwLDAuNS0wLjEsMC43LTAuMmMwLjItMC4xLDAuNC0wLjIsMC42LTAuM2MwLjItMC4xLDAuMi0wLjMsMC4yLTAuNQoJCVMyNS41LDQuMiwyNS40LDRjLTAuMi0wLjEtMC4zLTAuMi0wLjYtMC4zYy0wLjItMC4xLTAuNS0wLjEtMC43LTAuMkMyMy45LDMuNSwyMy42LDMuNSwyMy40LDMuNXoiLz4KPC9nPgo8L3N2Zz4K')*/
+        }
+
+        /* Top icon: e-스포츠 무료 아이콘 */
+        .header_navigation .navigation li.center:nth-child(7).page.show:not(.page-children li.left.page.show):before {
+            /*background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 16' style='enable-background:new 0 0 30 16;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23F1E219;%7D .st1%7Bfill:%23094E34;%7D%0A%3C/style%3E%3Cpath class='st0' d='M0,0v13l15,3l15-3V0H0z'/%3E%3Cg%3E%3Cpath class='st1' d='M9.3,8.1v4.3H8.7V8.1H3.8V7.5h10.4v0.6H9.3z M5.5,5.8V1.6h7v4.3H5.5z M11.8,2.1H6.2v3.1h5.6V2.1z'/%3E%3Cpath class='st1' d='M17.3,4.7h6.6V2.7h-6.5V2.1h7.2v3.1H18v2h6.9v0.6h-1.8v2.3h3.1v0.6H15.8v-0.6h3.1V7.8h-1.5V4.7z M22.5,10.2 V7.8h-3v2.3H22.5z'/%3E%3C/g%3E%3C/svg%3E%0A");*/
+        }
+
+        /* end new or top flags */
+
+        .sb-account-btn .btn-secondary .viaEmail {
+            display: none !important;
+        }
+
+        .userInfoAndBalance__info__details__user {
+            display: none !important;
+        }
+
+        .userInfoAndBalance__info--title {
+            display: none !important;
+        }
+
+        .providersDesktop__allProviders {
+            width: 100%;
+        }
+
+        .accountUi__bonuses .accountUi__title {
+            display: none !important;
+        }
+
+        .accountUi__bonuses .accountUi__subTitle {
+            display: none !important;
+        }
+
+        .accountModal--mobile .accountUi__title {
+            display: none !important;
+        }
+
+        .accountModal--mobile .accountUi__subTitle {
+            display: none !important;
+        }
+
+        .userInfoAndBalance__info__details {
+            gap: 0 !important;
+        }
+
+        .listItem__thumb {
+            margin-right: 3px !important;
+        }
+
+        .v3TournamentStatus {
+            min-width: 20%;
+        }
+
+        .sportTournamentCard .timeSquareLabel {
+            color: #fff !important;
+        }
+
+        .freeSpin__title .freeSpin__desc {
+            display: none !important;
+        }
+
+        .empty-bonuses__info {
+            max-width: 287px !important;
+        }
+
+        .statistics-market-count {
+            text-align: center;
+        }
+
+        .calendar-content--header .col__12 .calendar-event-name {
+            flex: 0 0 16.5% !important;
+            max-width: 16.5% !important;
+        }
+
+        .calendar-content--header .v3-select-single .v3-select-selector .v3-select-selection-item {
+            text-align: center;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+	
+	*,
+	*:before,
+	*:after {
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	
+	body {
+	  background-color: @am-body-background;
+	  font-size: @font-size-base;
+	}
+	
+	*[contenteditable] {
+	  -webkit-user-select: auto !important;
+	}
+	
+	*:focus {
+	  outline: none;
+	}
+	
+	a {
+	  background: transparent;
+	  text-decoration: none;
+	  outline: none;
+	}
+	.authSectionsButtonsWrapper {
+	  flex-wrap: wrap;
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  gap: 8px;
+	  flex: 1;
+	
+	  [class*='-btn'] {
+	    padding: 4px 8px;
+	  }
+	}
